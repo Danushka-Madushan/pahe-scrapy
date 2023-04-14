@@ -1,0 +1,16 @@
+{
+    "authority": "animepahe.com",
+    "accept": "application/json, text/javascript, */*; q=0.01",
+    "accept-language": "en-US,en;q=0.9",
+    "cookie": "aud=jpn; av1=0; res=480; SERVERID=janna; latest=5191; __cf_bm=4K8mJOWu5OWHb2uxv8L6_DL5xeHxJhe3IDAuoIRh55o-1681444925-0-ASKEdbi9sMo4IIff0C7Da4f0xXK0SFRp5pH5obJL59zgQNTssCQNCvWFPn1SmbSRkJc0x42DILFjuOtBhb2JAz1fcvKPJwn6s0Y+O/qHvZzJEMcXLFrZYchrVyeJXfn0Ww==; XSRF-TOKEN=eyJpdiI6IjJZVWw2Skh2TTdGZUtJNFdNRHk2aXc9PSIsInZhbHVlIjoiNVJWcGl6MENLd0FzYktqakpwanRKWmlsb2xrTWxHdmpUNVFoMDE1MEkvWERQWk5xSkNxemRXUFVhWWpIM2dhZ0xvOW1LQVZ5dXlxYkp3WCt5aWR2eDFBWFJ6MVc2UjN1ZmsxTWEyOHFhS2FhbU8wbDlndUVKenNPUmtHT0k4dGUiLCJtYWMiOiI1NmM0YWExYzg1YTExNGYzZmM2YjY5YWNjNTAyZWI2Yzk4MDNkZGI2M2ZiZWM2ODk2NmE5NWE5MmQxYzdkN2RkIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InV2ckNkY1pDcVlCR3ZCMzdVckFlMUE9PSIsInZhbHVlIjoid1gzOWxRZXVpUFJOc2dVMjRLM0loUGluOUE0MjdtV2hVMUlUeXdpSmpUaS9adWgvMDhSMXQ2cDJjdkJTRG12TjZneGZsTzVMK2hDdUJRRXRBSENiK0hYcG1PVVFtTEFuRmF6U0lyT3FxZjVXL1VRckUrVGVQeE5XU3owaElzMWsiLCJtYWMiOiI5ZTY0MmExZDgwODAxOThjZDg0ODg4MTZkNzhiYjMwMTlhNjA2M2YzNmRmN2Y0MjBkZDI1ODJhODU5YjllYjNiIiwidGFnIjoiIn0%3D",
+    "dnt": "1",
+    "referer": "https://animepahe.com/",
+    "sec-ch-ua": "Chromium\";v=\"112\", \"Microsoft Edge\";v=\"112\", \"Not:A-Brand\";v=\"99",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "Windows",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.39",
+    "x-requested-with": "XMLHttpRequest"
+}
