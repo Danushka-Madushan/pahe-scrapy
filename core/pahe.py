@@ -21,7 +21,6 @@ class AnimePahe:
     def getEpisode(session: str, playid: str) -> dict:
         response = requests.get(ENV.PLAY_API + session + '/' + playid)
         matches = re.findall(r'<a.href="(https?://pahe.win/[^"]+)".target="_blank"[^>]+.(.+?)<', response.content.decode('utf-8'))
-        print(matches)
         if (len(matches) != 0):
             linkset = getMaxRes(matches)
             resp = requests.get(linkset[0])
