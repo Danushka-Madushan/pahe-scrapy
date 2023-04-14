@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web&display=swap');
+
+:root {
+    --radius: 4px
+}
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+*:focus, :active {
+    outline: none;
+}
+
+button {
+    border: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.searchbox {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    border: 2px solid #009B77;
+    border-right: none;
+    border-radius: var(--radius) 0px 0px var(--radius);
+    height: 22px;
+    width: 200px;
+    padding: 2px 8px;
+    color: #1c1e21;
+}
+
+.search {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #009B77;
+    border-radius: 0px var(--radius) var(--radius) 0px;
+    transition: .2s;
+}
+
+.search:hover {
+    background-color: #0c8568;
+}
+
+.search:active {
+    background-color: #009B77;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* article */
+
+.article {
+    display: flex;
+    border: 3px solid #2374e1;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .34);
+    margin-bottom: 15px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+}
+
+.poster {
+    width: 80px;
+    border-radius: 4px 4px 0 0 ;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .34);
+}
+
+.download {
+    display: block;
+    color: #fff;
+    background-color: #009B77;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .34);
+    transition: .2s;
+}
+
+.download:hover {
+    background-color: #0c8568;
+}
+
+.download:active {
+    background-color: #009B77;
+}
+
+.section {
+    margin: 10px 0px;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.type, .score, .episodes{
+    color: #fff;
+    border-radius: var(--radius);
+}
+
+.episodes {
+    background-color: #2374e1;
+}
+
+.type {
+    background-color: #2374e1;
+}
+
+.score {
+    background-color: #EFC050;
+}
+
+.year, .status, .title {
+    border-radius: var(--radius);
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .34);
+}
+
+/* episdoe */
+
+.epimg {
+    width: 80px;
+    border-radius: var(--radius);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .34);
+}
+
+.episode {
+    display: flex;
+    border: 3px solid #2374e1;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .34);
+    margin-bottom: 10px;
+}
+
+.content {
+    display: grid;
+    margin-left: 10px;
+}
+
+.epid, .bd {
+    color: #fff;
+    border-radius: var(--radius);
+    background-color: #2374e1;
+}
+
+.duration, .audio {
+    border-radius: var(--radius);
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .34);
+}
+
+.epdown, .epdownplus {
+    color: #fff;
+    background-color: #009B77;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .34);
+    transition: .2s;
+}
+
+.epdown {
+    width: 65px;
+}
+
+.epdown:hover, .epdownplus:hover{
+    background-color: #0c8568;
+}
+
+.epdown:active, .epdownplus:active {
+    background-color: #009B77;
+}
