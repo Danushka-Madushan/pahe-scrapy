@@ -54,7 +54,7 @@ const genEpisode = (data, session) => {
 const getAnimeList = async () => {
     $(namebox).blur();
     document.getElementById('result').innerHTML = ''
-    const response = await axios.get(`http://localhost:8000/api/search/${namebox.value}`)
+    const response = await axios.get(`/api/search/${namebox.value}`)
     for (let each of response.data.content.data) {
         const item = genArticle(each)
         document.getElementById('result').appendChild(item)
@@ -72,7 +72,7 @@ search.onclick = async () => {
 }
 
 $(document.getElementById('result')).on('click', '.article .img .download', async function () {
-    const response = await axios.get(`http://localhost:8000/api/session/${this.id}`)
+    const response = await axios.get(`/api/session/${this.id}`)
     if (response.data.status == 200) {
         document.getElementById('result').innerHTML = ''
         for (let each of response.data.content.data) {
@@ -85,7 +85,7 @@ $(document.getElementById('result')).on('click', '.article .img .download', asyn
 $(document.getElementById('result')).on('click', '.episode .content .ep-info .epdown', async function () {
     const session = this.dataset.ssid
     const playid = this.dataset.id
-    const response = await axios.get(`http://localhost:8000/api/links/${session}/${playid}`)
+    const response = await axios.get(`/api/links/${session}/${playid}`)
     if (response.data.status == 200) {
         this.innerText = 'Sucess'  
         this.parentNode.parentNode.children[1].innerHTML = `
