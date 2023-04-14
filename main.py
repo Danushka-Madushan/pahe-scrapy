@@ -22,6 +22,10 @@ async def read_item(query: str) -> dict:
 async def getEpisodes(session: str) -> dict:
     return AnimePahe.getEpisodes(session)
 
+@api.get("/links/{session}/{playid}")
+async def getEpisodeLink(session: str, playid: str) -> dict:
+    return AnimePahe.getEpisode(session, playid)
+
 # UI Endpoints
 app = FastAPI()
 
