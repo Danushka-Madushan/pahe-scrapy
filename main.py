@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
+from uvicorn import run
 from core.pahe import AnimePahe
-from core.config import CORS
+from core.config import CORS, PORT
 
 # API Endpoints
 api = FastAPI()
@@ -31,3 +32,6 @@ app = FastAPI()
 
 app.mount("/api", api)
 app.mount("/", StaticFiles(directory="ui", html=True), name="ui")
+
+if __name__ == "__main__":
+    run(app, host="0.0.0.0", port=PORT)
