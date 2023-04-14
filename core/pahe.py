@@ -1,6 +1,6 @@
 # All Functions Goes Here
 import requests
-from systems import getHeaders, ENV
+from .systems import getHeaders, ENV
 
 class AnimePahe:
     def __init__(self) -> None:
