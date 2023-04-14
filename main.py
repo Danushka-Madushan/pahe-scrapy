@@ -18,6 +18,10 @@ api.add_middleware( CORSMiddleware,
 async def read_item(query: str) -> dict:
     return AnimePahe.getAnimeList(query)
 
+@api.get("/session/{session}")
+async def getEpisodes(session: str) -> dict:
+    return AnimePahe.getEpisodes(session)
+
 # UI Endpoints
 app = FastAPI()
 
