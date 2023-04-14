@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web&display=swap');
+
+:root {
+    --radius: 4px
+}
+
 * {
-    font-family: 'Roboto';
+    font-family: 'Titillium Web', sans-serif;
+}
+
+*:focus, :active {
+    outline: none;
+}
+
+.searchbox {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    border: 2px solid #009B77;
+    border-right: none;
+    border-radius: var(--radius) 0px 0px var(--radius);
+    height: 22px;
+    width: 200px;
+    padding: 2px 8px;
+}
+
+.search {
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    background-color: #009B77;
+    border-radius: 0px var(--radius) var(--radius) 0px;
+    transition: .2s;
+}
+
+.search:hover {
+    background-color: #0c8568;
+}
+
+.search:active {
+    background-color: #009B77;
 }
